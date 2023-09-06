@@ -188,4 +188,7 @@ jobs:
         ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
         ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
         ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-      run: terraform apply -auto-approve
+      run: |
+        terraform import azurerm_resource_group.rg /subscriptions/788155b1-8c93-4a55-a386-5805f31d5ddb/resourceGroups/rg-hyango-web-sql-db
+        terraform apply -auto-approve
+        
