@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
   
 env:
-  STORAGE_ACCOUNT_NAME: storagetfstate013
-  RESOURCE_GROUP_NAME: rg-terraform-state
+  STORAGE_ACCOUNT_NAME: stochytfstate013
+  RESOURCE_GROUP_NAME: rg-hyango-web-sql-db
   CONTAINER_NAME: tfstate
   BLOB_NAME: terraform.tfstate
   
